@@ -1,1 +1,1 @@
-# stats-api-go
+# scraper-api-go

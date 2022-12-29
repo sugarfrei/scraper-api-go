@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8080:8080"
+    deploy:
+      mode: replicated
+      replicas: 1
+    environment:
+      listen: "0.0.0.0:8080"
